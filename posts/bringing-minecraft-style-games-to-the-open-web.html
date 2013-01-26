@@ -1,157 +1,10 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="alternate" type="application/rss+xml" title="Max Ogden Blogotronz (RSS 2.0)" href="http://maxogden.com/rss.xml">
-  <title>Max Ogden Blogotronz</title> 
-  
-  <link href="styles/styles.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="styles/rainbow.github.css" media="screen" rel="stylesheet" type="text/css">
-
-  <!-- libraries --> 
-  <script src="script/jquery-1.6.1.min.js"></script>
-  <script src="script/underscore.js"></script>
-  <script src="script/d3.min.js"></script>
-  <script src="script/voronoi.min.js"></script>
-  <script src="script/rainbow.min.js"></script>
-  <script src="script/rainbow.generic.js"></script>
-  <script src="script/rainbow.javascript.js"></script>
-  <script src="script/rainbow.css.js"></script>
-  <script src="script/helpers.js"></script>
-  
-  <script src="script/application.js"></script>
-
-</head>
-<body> 
-  <div id="container">
-    <div class="header">
-      <div class="title">Max Ogden | <a href="http://tantek.com/2010/281/b1/what-is-the-open-web">Open Web</a> developer</div>
-      <div class="subtitle"></div>
-      <!-- THANKS, MICHAEL BOSTOCK! YOU RULE -->
-      <div id="voronoi">
-      </div>
-      <div class="channel"></div>
-      <div id="navigation">
-        <div class="toggle home">
-          <div class="navitem">
-            <a href="index.html">blog</a>
-          </div>
-        </div>
-        <div class="toggle home">
-          <div class="navitem">
-            <a href="projects.html">projects</a>
-          </div>
-        </div>
-        <div class="toggle home">
-          <div class="navitem">
-            <a href="videos.html">media</a>
-          </div>
-        </div>
-        <div class="toggle home">
-          <div class="navitem">
-            <a href="contact.html">contact</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div id="wrapper">
-      <div id="browser">
-        <div id="documents"><a class="load-document" href="bringing-minecraft-style-games-to-the-open-web.html">
-  <div class="document active" id="bringing-minecraft-style-games-to-the-open-web">
-    <div class="published" data-published="2013-01-25T20:48:11.493Z">January 2013</div>
-    <div class="title">Bringing Minecraft-style games to the Open Web</div>
-    <div class="teaser">A status report from the one month old voxel.js project</div>
-  </div>
-</a>
-
-<a class="load-document" href="a-proposal-for-streaming-xhr.html">
-  <div class="document" id="a-proposal-for-streaming-xhr">
-    <div class="published" data-published="2012-11-20T20:48:11.493Z">November 2012</div>
-    <div class="title">A Proposal For Streaming XHR</div>
-    <div class="teaser">XHR2 isn't stream friendly. Lets explore why and propose a solution!</div>
-  </div>
-</a>
-
-<a class="load-document" href="scraping-with-node.html">
-  <div class="document" id="scraping-with-node">
-    <div class="published" data-published="2012-10-24T20:48:11.493Z">October 2012</div>
-    <div class="title">Scraping With Node</div>
-    <div class="teaser">Useful modules and a tutorial on how to parse HTML with node.js</div>
-  </div>
-</a>
-
-<a class="load-document" href="building-webview-applications.html">
-  <div class="document" id="building-webview-applications">
-    <div class="published" data-published="2012-10-15T20:48:11.493Z">October 2012</div>
-    <div class="title">Building WebView Applications</div>
-    <div class="teaser">Things I learned while building @gather</div>
-  </div>
-</a>
-
-<a class="load-document" href="fast-webview-applications.html">
-  <div class="document" id="fast-webview-applications">
-    <div class="published" data-published="2012-05-31T20:48:11.493Z">May 2012</div>
-    <div class="title">Fast WebView Applications</div>
-    <div class="teaser">How to make web apps feel fast and responsive</div>
-  </div>
-</a>
-
-<a class="load-document" href="node-streams.html">
-  <div class="document" id="node-streams">
-    <div class="published" data-published="2012-04-17T23:52:20.241Z">April 2012</div>
-    <div class="title">Node Streams: How do they work?</div>
-    <div class="teaser">Description of and notes on the node.js Stream API</div>
-  </div>
-</a>
-
-<a class="load-document" href="replicating-large-datasets-into-html5.html">
-  <div class="document" id="replicating-large-datasets-into-html5">
-    <div class="published" data-published="2012-04-14T06:32:16.787Z">April 2012</div>
-    <div class="title">Replicating large datasets into HTML5</div>
-    <div class="teaser">Typed arrays, streaming json and IndexedDB!</div>
-  </div>
-</a>
-
-<a class="load-document" href="open211.html">
-  <div class="document" id="open211">
-    <div class="published" data-published="2012-01-30T01:57:20.310Z">January 2012</div>
-    <div class="title">Open211</div>
-    <div class="teaser">An open source directory of social programs and services</div>
-  </div>
-</a>
-
-<a class="load-document" href="gut-hosted-open-data-filets.html">
-  <div class="document" id="gut-hosted-open-data-filets">
-    <div class="published" data-published="2011-12-02T20:36:31.424Z">December 2011</div>
-    <div class="title">Gut: Hosted Open Data Filet Knives</div>
-    <div class="teaser">HTTP Unix pipes for Open Data</div>
-  </div>
-</a>
-
-<a class="load-document" href="mobile-crowdsourcing-interfaces.html">
-  <div class="document" id="mobile-crowdsourcing-interfaces">
-    <div class="published" data-published="2011-07-30T17:20:49.949Z">July 2011</div>
-    <div class="title">Mobile Crowdsourcing Interfaces</div>
-    <div class="teaser">Some experiments in collecting images + location from mobile devices</div>
-  </div>
-</a>
-
-<a class="load-document" href="little-coders.html">
-  <div class="document" id="little-coders">
-    <div class="published" data-published="2011-07-17T02:56:48.555Z">July 2011</div>
-    <div class="title">Little Coders</div>
-    <div class="teaser">Elementary school programming</div>
-  </div>
-</a></div>
-      </div>
-      <div id="document"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Style-Type" content="text/css">
-    <meta name="author" content="Max Ogden">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="author" content="Max Ogden" />
     <title>Bringing Minecraft-style games to the Open Web</title>
   </head>
   
@@ -223,7 +76,7 @@
       </p>
       <p>I later learned about techniques to make real time multiplayer games fast like the <a href="https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking">Source Multiplayer Networking</a> article and the <a href="http://buildnewgames.com/real-time-multiplayer/">Build New Games HTML5 Networking</a> article. The server is still a work in progress but has server-side physics and (somewhat currently broken) client-side prediction. If this project interests you then get in touch and I can help you start hacking on it!</p>
       <p>
-        <iframe width="560" height="315" src="http://www.youtube.com/embed/Y0JiIDhdeuw" frameborder="0" allowfullscreen=""></iframe>
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/Y0JiIDhdeuw" frameborder="0" allowfullscreen></iframe>
       </p>
       <h2>Contributions!</h2>
       <p>The goal in most of my open source projects is to solve stupid problems so other people don't have to. Then people will use your solution to build other new things. It is a great feeling to see someone make something because of work that you did to make that thing easy.</p>
@@ -235,13 +88,13 @@
       <p>Many members of the Node.js community also are disciplined in writing small, Unixy pieces of software that do one thing and do them well. This is where the modular design of voxel.js comes from but also where our contributors come from. Since we used the package manager from node, put all of our code on Github, made some exciting demos and encouraged others to build new modules we were able to tap into the creativity of other members in our community like Kyle.</p>
       <p>While I was writing this article Kyle actually released a new module called <a href="http://npmjs.org/voxel-sky">voxel-sky</a> which lets you add sun and moon cycles to your voxel world.</p>
       <p>
-        <iframe width="560" height="315" src="http://www.youtube.com/embed/iES7EKhTJXU" frameborder="0" allowfullscreen=""></iframe>
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/iES7EKhTJXU" frameborder="0" allowfullscreen></iframe>
       </p>
       <p>
         At a <a href="http://musichackday.org/">Music Hack Day</a> hackathon somewhere in northern Europe last weekend a developer named <a href="http://github.com/andreypopp">Andrey Popp</a> made a project called MusVox that adds Soundcloud powered voxels. It even won a prize!
       </p>
       <p>
-        <iframe width="420" height="315" src="http://www.youtube.com/embed/k54Zq421PiI" frameborder="0" allowfullscreen=""></iframe>
+        <iframe width="420" height="315" src="http://www.youtube.com/embed/k54Zq421PiI" frameborder="0" allowfullscreen></iframe>
       </p>
       <p>Also in the realm of audio <a href="https://twitter.com/eckoit">Ryan Ramage</a> from the CouchDB community wrote the very impressively executed <a href="http://ryanramage.github.com/voxel-audio/">voxel-audio</a> which adds 3D positional audio to voxel games using the new HTML5 Web Audio API.</p>
       <p>Our old collision code needed some major love and luckily Chris Dickinson was knowledgable in the realm of collisions and physics and whipped up a ton of super useful (for any game) modules: <a href="https://github.com/chrisdickinson/aabb-3d">aabb-3d</a>, <a href="https://github.com/chrisdickinson/collide-3d-tilemap">collide-3d-tilemap</a>, <a href="https://github.com/chrisdickinson/spatial-events">spatial-events</a> and <a href="https://github.com/chrisdickinson/spatial-trigger">spatial-trigger</a>. Chris also sent a bunch of pull requests to the various voxel core modules to integrate in his modules and make our collisions super awesome. 
@@ -250,7 +103,7 @@
         Yesterday I wrote a couple of new modules, <a href="http://github.com/maxogden/voxel-highlight">highlight</a> and <a href="http://maxogden.github.com/voxel-script-gun">script-gun</a>. Here is a video of highlight in action:
       </p>
       <p>
-        <iframe width="560" height="315" src="http://www.youtube.com/embed/R3P0LN82QFY" frameborder="0" allowfullscreen=""></iframe>
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/R3P0LN82QFY" frameborder="0" allowfullscreen></iframe>
       </p>
       <p>I am most excited about script-gun though. From here on out I'm going to focus on making voxel.js an environment in which you can learn to program. Script-gun is my first attempt (the module itself is only about 50 lines of JS) at a WorldEdit style module in the browser. You can try <a href="http://maxogden.github.com/voxel-script-gun/">the demo here</a> and use some example scripts that I prepared <a href="http://maxogden.github.com/voxel-script-gun/">here</a> to get an idea of the possibilities. It will get more intuitive as time goes on, this is just the very first version.</p>
       <h2>What is next</h2>
@@ -274,22 +127,4 @@
       </p>
   </body>
 
-</html></div>
-    </div>
-  </div>  
-  
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-24933665-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-</body> 
 </html>
